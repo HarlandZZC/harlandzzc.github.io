@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 
 Hello! My name is Haolin He. I am currently a first-year PhD student in the [DSP LAB](http://dsp.ee.cuhk.edu.hk/) of the Department of Electrical Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/).
 
-Before this, I obtained a Bachelor of Engineering degree from [University of Electronic Science and Technology of China](https://www.uestc.edu.cn/) in Chengdu, majoring in Communication Engineering. I graduated with an honors degree and was recognized as an Outstanding Graduate of Sichuan Province.
+Before this, I obtained a Bachelor of Engineering degree in Communication Engineering from [University of Electronic Science and Technology of China](https://www.uestc.edu.cn/) in Chengdu. I graduated with an honors degree and was recognized as an outstanding graduate at both the university and provincial levels.
 
 I am now supervised by [Qiuqiang Kong](https://qiuqiangkong.github.io/). My undergraduate thesis advisor was [Fan Zhang](https://zhangfanmark.github.io/). I am grateful for their support.
 
