@@ -23,10 +23,6 @@ Before this, I obtained a Bachelor of Engineering degree from the University of 
 
 I am now supervised by [Qiuqiang Kong](https://qiuqiangkong.github.io/). My undergraduate thesis advisor was [Fan Zhang](https://zhangfanmark.github.io/). I am grateful for their support.
 
-My research interests are in artificial intelligence and its applications to various signal processing problems, such as
-
-* audio and music processing,
-* neuroimaging analysis,
-* and general signal processing.
+My research interests are in artificial intelligence and its applications to various signal processing problems, such as audio processing and neuroimaging analysis.
 
 Please feel free to contact me via email, or visit the DSP Lab for in-person discussions.
