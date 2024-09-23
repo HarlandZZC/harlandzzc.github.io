@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Welcome to Haolin's Personal Webpage! # the website title (if blank, full name will be used instead)
+title: # the website title (if blank, full name will be used instead)
 first_name: Haolin
 middle_name:
 last_name: He
@@ -41,7 +41,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: False
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -113,7 +113,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  Room 329, Ho Sin Hang Engineering Building, Dept. of Electronic Engineering, The Chinese University of Hong Kong
+  Feel free to contact me via my email.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
