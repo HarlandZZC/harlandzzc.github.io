@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-09-01 12:00:00+0800
+date: 2024-08-01 12:00:00+0800
 inline: true
 related_posts: false
 ---
 
-My first paper, titled 'A Novel Deep Clustering Framework for Fine-Scale Parcellation of Amygdala Using DMRI Tractography,' is published at ISBI2024, and I am selected as one of the 50 Student Travel Grant Winners worldwide.
+I join the DSP Lab, EE, CUHK, and I’m excited to meet everyone!
