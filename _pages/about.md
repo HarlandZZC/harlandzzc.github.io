@@ -17,9 +17,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello! My name is Haolin He. I am currently a first-year PhD student in the [DSP LAB](http://dsp.ee.cuhk.edu.hk/) of the Department of Electrical Engineering at The Chinese University of Hong Kong, supervised by [Qiuqiang Kong](https://qiuqiangkong.github.io/).
+Hello! My name is Haolin He. I am currently a first-year PhD student in the [DSP LAB](http://dsp.ee.cuhk.edu.hk/) of the Department of Electrical Engineering at The Chinese University of Hong Kong.
 
-Before this, I obtained a Bachelor of Engineering degree from the University of Electronic Science and Technology of China (with honors and as an Outstanding Graduate of Sichuan Province), majoring in Communication Engineering. My undergraduate thesis advisor was [Fan Zhang](https://zhangfanmark.github.io/).
+Before this, I obtained a Bachelor of Engineering degree from the University of Electronic Science and Technology of China (with honors and as an Outstanding Graduate of Sichuan Province), majoring in Communication Engineering.
+
+I am now supervised by [Qiuqiang Kong](https://qiuqiangkong.github.io/). My undergraduate thesis advisor was [Fan Zhang](https://zhangfanmark.github.io/).
 
 My research interests are in artificial intelligence and its applications to various signal processing problems, such as audio and neuroimaging analysis.
 
