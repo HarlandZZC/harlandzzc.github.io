@@ -25,4 +25,6 @@ I am now supervised by [Qiuqiang Kong](https://qiuqiangkong.github.io/). My unde
 
 My research interests are in artificial intelligence and its applications to various signal processing problems, such as audio processing and neuroimaging analysis.
 
+I am a volunteer at the Chengdu Research Base of Giant Panda Breeding.
+
 Please feel free to contact me via email, or visit the DSP Lab for in-person discussions!
