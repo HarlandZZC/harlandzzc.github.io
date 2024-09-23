@@ -21,8 +21,8 @@ Hello! My name is Haolin He. I am currently a first-year PhD student in the [DSP
 
 Before this, I obtained a Bachelor of Engineering degree from the University of Electronic Science and Technology of China (with honors and as an Outstanding Graduate of Sichuan Province), majoring in Communication Engineering.
 
-I am now supervised by [Qiuqiang Kong](https://qiuqiangkong.github.io/). My undergraduate thesis advisor was [Fan Zhang](https://zhangfanmark.github.io/).
+I am now supervised by [Qiuqiang Kong](https://qiuqiangkong.github.io/). My undergraduate thesis advisor was [Fan Zhang](https://zhangfanmark.github.io/). I am grateful for their support.
 
 My research interests are in artificial intelligence and its applications to various signal processing problems, such as audio and neuroimaging analysis.
 
-Please feel free to contact me.
+Please feel free to contact me via email, or visit the DSP Lab for in-person discussions.
