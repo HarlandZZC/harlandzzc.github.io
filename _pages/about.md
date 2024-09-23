@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+subtitle: <a href='#'>Affiliations</a>. PhD student, DSP LAB, EE, CUHK
 profile:
   align: right
-  image: prof_pic.jpg
+  image: haolin_personal_web.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Room 329, Ho Sin Hang Engineering Building</p>
-    <p>Dept. of Electronic Engineering</p>
-    <p>The Chinese University of Hong Kong</p>
+    <p>Room 329,</p>
+    <p>Ho Sin Hang Eng. Bldg,</p>
+    <p>The Chinese Univ. of Hong Kong</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
