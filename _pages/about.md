@@ -5,7 +5,7 @@ permalink: /
 subtitle: PhD student, DSP Lab, EE, CUHK
 profile:
   align: right
-  image: haolin_personal_web_square.jpg
+  image: haolin_personal_web.jpg
   image_circular: false # crops the image to make it circular
 
 news: true # includes a list of news items
