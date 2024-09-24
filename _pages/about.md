@@ -7,10 +7,6 @@ profile:
   align: right
   image: haolin_personal_web_square.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Room 329,</p>
-    <p>Ho Sin Hang Eng. Bldg,</p>
-    <p>The Chinese Univ. of HK</p>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
