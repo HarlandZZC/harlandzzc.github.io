@@ -7,3 +7,5 @@ github_repos:
   - HarlandZZC/deep_nuclei_parcellation
   - HarlandZZC/generated_music_evaluation
   - HarlandZZC/music_tagging_accelerate
+  - HarlandZZC/music_tagging_parallel
+
