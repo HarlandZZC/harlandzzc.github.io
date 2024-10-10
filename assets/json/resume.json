@@ -10,21 +10,10 @@
       "address": "SHB329, CUHK, NT, Hong Kong"
     }
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
   "volunteer": [
     {
       "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
+      "location": "Chengdu, China",
       "position": "Lead Organizer",
       "url": "https://example.com",
       "startDate": "2014-04-01",
