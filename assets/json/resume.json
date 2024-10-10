@@ -16,20 +16,19 @@
       "location": "Shatin, Hong Kong",
       "url": "https://www.cuhk.edu.hk/",
       "area": "Electronic Engineering",
-      "studyType": "PhD",
+      "studyType": "Doctor of Philosophy",
       "startDate": "2024-08",
-      "endDate": "2028-08",
+      "endDate": "present",
       "courses": ["Signal Processing", "Artificial Intelligence"]
     },
     {
       "institution": "University of Electronic Science and Technology of China",
       "location": "Chengdu, China",
       "url": "https://www.uestc.edu.cn/",
-      "area": "Electronic Science and Technology",
+      "area": "Comminiucation Engineering",
       "studyType": "Bachelor of Engineering",
       "startDate": "2020-09",
-      "endDate": "2024-07",
-      "courses": ["Major: Comminiucation Engineering"]
+      "endDate": "2024-07"
     }
   ],
   "awards": [
@@ -69,12 +68,12 @@
     {
       "language": "Chinese",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "fa-solid fa-hashtag"
     },
     {
       "language": "English",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "fa-solid fa-hashtag"
     }
   ],
   "interests": [
