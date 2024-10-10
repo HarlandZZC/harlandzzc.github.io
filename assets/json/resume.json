@@ -28,7 +28,8 @@
       "area": "Comminiucation Engineering",
       "studyType": "Bachelor of Engineering",
       "startDate": "2020-09",
-      "endDate": "2024-07"
+      "endDate": "2024-07",
+      "courses": ["Digital Signal Processing", "Principles of Communication", "..."]
     }
   ],
   "awards": [
