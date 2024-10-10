@@ -34,22 +34,26 @@
   "awards": [
     {
       "title": "Bachelor's Degree with Honors",
+      "url": "https://www.uestc.edu.cn/",
       "date": "2024-06",
       "awarder": "University of Electronic Science and Technology of China"
     },
     {
       "title": "Outstanding Graduate of UESTC",
+      "url": "https://www.uestc.edu.cn/",
       "date": "2024-06",
       "awarder": "University of Electronic Science and Technology of China"
     },
     {
       "title": "Outstanding Graduate of Sichuan Province",
+      "url": "https://edu.sc.gov.cn/",
       "date": "2024-06",
       "awarder": "Sichuan Provincial Department of Education"
     },
     {
       "title": "National Scholarship",
       "date": "2023-11",
+      "url": "http://www.moe.gov.cn/",
       "awarder": "Ministry of Education of the People's Republic of China"
     }
   ],
@@ -58,7 +62,7 @@
       "organization": "Chengdu Research Base of Giant Panda Breeding",
       "location": "Chengdu, China",
       "position": "Science Popularization Volunteer",
-      "url": "https://example.com",
+      "url": "https://www.panda.org.cn/",
       "startDate": "2023-07",
       "endDate": "2023-08",
       "summary": "I provide scientific explanations about giant pandas to visitors from all over the world."
