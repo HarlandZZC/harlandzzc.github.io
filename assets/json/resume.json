@@ -12,14 +12,13 @@
   },
   "volunteer": [
     {
-      "organization": "People's Climate March",
+      "organization": "Chengdu Research Base of Giant Panda Breeding",
       "location": "Chengdu, China",
-      "position": "Lead Organizer",
+      "position": "Science Popularization Volunteer",
       "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "startDate": "2023-07",
+      "endDate": "2023-08",
+      "summary": "I provide scientific explanations about giant pandas to visitors from all over the world."
     }
   ],
   "education": [
