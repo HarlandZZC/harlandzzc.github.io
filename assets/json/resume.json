@@ -81,19 +81,12 @@
     {
       "name": "Signal Processing",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Audio Processing",
-        "Neuroimage Processing",
-        "Time Series Analysis"
-      ]
+      "keywords": ["Audio Processing", "Neuroimage Processing", "Time Series Analysis"]
     },
     {
       "name": "Artificial Intelligence",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Language Model",
-        "Generative Model"
-      ]
+      "keywords": ["Language Model", "Generative Model"]
     }
   ]
 }
