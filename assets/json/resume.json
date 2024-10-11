@@ -73,23 +73,23 @@
     {
       "language": "Chinese",
       "fluency": "Native speaker",
-      "icon": "fa-solid fa-hashtag"
+      "icon": "fa-solid fa-tag"
     },
     {
       "language": "English",
       "fluency": "Fluent",
-      "icon": "fa-solid fa-hashtag"
+      "icon": "fa-solid fa-tag"
     }
   ],
   "interests": [
     {
       "name": "Signal Processing",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-hashtag",
       "keywords": ["Audio Processing", "Neuroimage Processing", "Time Series Analysis"]
     },
     {
       "name": "Artificial Intelligence",
-      "icon": "fa-solid fa-tag",
+      "icon": "fa-solid fa-hashtag",
       "keywords": ["Language Model", "Generative Model"]
     }
   ]
