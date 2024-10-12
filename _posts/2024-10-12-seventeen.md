@@ -3,7 +3,7 @@ layout: Seventeen suggestions from my supervisor
 title: a
 date: 2024-10-12 10:50:00
 tags: Thoughts
-description: If you're just starting your PhD journey, these suggestions could be helpful. 
+description: If you're just starting your PhD journey, these suggestions could be helpful.
 featured: true
 ---
 
