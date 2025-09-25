@@ -29,14 +29,14 @@
       "studyType": "Bachelor of Engineering",
       "startDate": "2020-09",
       "endDate": "2024-07",
-      "courses": ["Fundamentals of Electrical Engineering"]
+      "courses": ["Fundamentals of Electronic Engineering"]
     }
   ],
   "awards": [
     {
       "title": "First Place in the DCASE 2025 Audio-Question-Answering Challenge",
       "url": "https://dcase.community/challenge2025/task-audio-question-answering-results",
-      "date": "2025",
+      "date": "2025-07",
       "awarder": "DCASE Community"
     },
     {
