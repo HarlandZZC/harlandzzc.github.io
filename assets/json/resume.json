@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Haolin He",
-    "label": "First-year PhD",
+    "label": "Second-year PhD",
     "image": "",
     "email": "harlandzzc(at)gmail.com",
     "url": "https://harlandzzc.github.io/cv/",
@@ -33,6 +33,12 @@
     }
   ],
   "awards": [
+    {
+      "title": "First Place in the DCASE 2025 Audio-Question-Answering Challenge",
+      "url": "https://dcase.community/challenge2025/task-audio-question-answering-results",
+      "date": "2025",
+      "awarder": "DCASE Community"
+    },
     {
       "title": "Bachelor's Degree with Honors",
       "url": "https://www.uestc.edu.cn/",
