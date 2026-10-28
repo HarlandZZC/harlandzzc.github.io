@@ -1,6 +1,6 @@
 # Haolin He · Personal website
 
-Three standalone pages: **About / Publications / Blog**. The site uses a light gray background, a white content area, and purple headings and links. Body text uses Source Sans 3, while headings use Source Serif 4. Fonts and photos are stored locally. No npm, Jekyll, or network connection is required to browse the site locally.
+Three standalone pages: **About / Publications / Blog**. The site uses a light gray background, a white content area, and purple headings and links. Body text and headings use Source Serif 4 at different weights. Fonts and photos are stored locally. No npm, Jekyll, or network connection is required to browse the site locally.
 
 ## GitHub Pages deployment
 

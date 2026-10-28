@@ -24,6 +24,14 @@
 
 @font-face {
   font-family: "Source Serif 4";
+  src: url("../fonts/source-serif-4-latin-400-normal.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Serif 4";
   src: url("../fonts/source-serif-4-latin-600-normal.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
@@ -115,8 +123,8 @@ img { display: block; max-width: 100%; height: auto; }
 .experience-entry + .experience-entry, .education-entry + .education-entry, .service-entry + .service-entry { margin-top: 16px; }
 .entry-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; }
 .entry-heading h3 { color: var(--text); }
-.entry-date { font-size: 19px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
-.entry-role { margin-top: 3px; color: #514957; }
+.entry-date { font-size: 19px; color: var(--text); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.entry-role { margin-top: 3px; color: var(--text); }
 .education-entry ul { margin-top: 7px; }
 .award-list { margin-top: 0; }
 .award-list li { margin-bottom: 6px; }
@@ -131,25 +139,26 @@ img { display: block; max-width: 100%; height: auto; }
 .paper-authors { font-size: 19px; line-height: 1.4; }
 .paper-authors strong { color: var(--text); }
 .paper-venue { font-size: 19px; }
-.paper-venue > span { color: var(--muted); margin-left: 5px; }
+.paper-venue > span { color: var(--text); margin-left: 5px; }
 .resource-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; font-size: 19px; }
 
 /* Blog uses the same typography and layout as the other two pages. */
 .blog-entry + .blog-entry { margin-top: 20px; }
 .blog-entry h3 { font-size: 22px; line-height: 1.35; }
 .blog-entry p { margin-top: 6px; }
-.post-meta { font-size: 18px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.post-meta { font-size: 18px; color: var(--text); font-variant-numeric: tabular-nums; }
 .article-heading { margin-top: 26px; }
 .article-heading h1 { margin-bottom: 12px; }
 [lang="zh-Hans"] { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", var(--body-font); }
 .article-deck { margin-top: 16px; }
 .prose { margin-top: 18px; line-height: 1.45; }
+.article-heading + .prose { margin-top: 10px; }
 .prose li { margin-bottom: 10px; padding-left: 5px; }
 .prose .bilingual-list { padding-left: 32px; }
 .prose .bilingual-list > li { margin-bottom: 14px; padding-left: 8px; }
 .prose .bilingual-list p { margin: 0; }
 .prose .bilingual-list p + p { margin-top: 4px; }
-.prose .bilingual-list [lang="zh-Hans"] { line-height: 1.5; color: var(--muted); }
+.prose .bilingual-list [lang="zh-Hans"] { font-family: "Kaiti SC", "KaiTi", "STKaiti", serif; line-height: 1.5; color: var(--text); }
 .prose .bilingual-list [lang="en"] { color: var(--text); }
 .prose h2, .prose h3 { margin: 24px 0 12px; }
 .prose p { margin: 8px 0; }
@@ -157,7 +166,7 @@ img { display: block; max-width: 100%; height: auto; }
 .prose code { font-family: Consolas, "Liberation Mono", monospace; font-size: .9em; overflow-wrap: anywhere; }
 .prose blockquote { margin: 18px 0; padding-left: 18px; border-left: 3px solid #c6a8cc; }
 .prose figure { margin: 20px 0; }
-.prose figcaption { color: var(--muted); font-size: 17px; margin-top: 7px; }
+.prose figcaption { color: var(--text); font-size: 17px; margin-top: 7px; }
 .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 22px 0; }
 .article-back { margin-top: 24px; }
 .site-footer { margin-top: 36px; padding-top: 12px; border-top: 1px solid var(--rule); font-size: 18px; color: var(--muted); }

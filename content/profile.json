@@ -33,7 +33,7 @@
       "institution": "The Chinese University of Hong Kong",
       "url": "https://www.cuhk.edu.hk/",
       "degree": "Ph.D. in Electronic Engineering",
-      "short_period": "2024 — present",
+      "short_period": "Aug 2024 — present",
       "highlights": [
         "Advised by [Prof. Qiuqiang Kong](https://qiuqiangkong.github.io/).",
         "Research in multimodal understanding, reasoning, interaction, and post-training."
@@ -43,7 +43,7 @@
       "institution": "University of Electronic Science and Technology of China",
       "url": "https://en.uestc.edu.cn/",
       "degree": "B.Eng. in Communication Engineering",
-      "short_period": "2020 — 2024",
+      "short_period": "Sep 2020 — Jun 2024",
       "highlights": [
         "GPA **3.95/4.0**. Outstanding Graduate of Sichuan Province and UESTC.",
         "National Scholarship (2022–23).",
@@ -198,7 +198,7 @@
     {
       "title": "DCASE 2026 · Audio-Dependent Question Answering",
       "role": "Lead Organizer",
-      "period": "2026",
+      "period": "Mar — Jul 2026",
       "url": "https://dcase.community/challenge2026/task-audio-dependent-question-answering"
     },
     {

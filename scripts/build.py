@@ -46,6 +46,13 @@ def social_link(url: str, label: str, icon: str) -> str:
     return f'<a class="social-link" href="{safe_url(url)}" aria-label="{esc(label)}"{attrs}>{icon}</a>'
 
 
+def paragraph(text: str, css: str = "") -> str:
+    if not text:
+        return ""
+    class_attr = f' class="{esc(css)}"' if css else ""
+    return f"<p{class_attr}>{esc(text)}</p>"
+
+
 INLINE = re.compile(r"(\*\*.+?\*\*|`[^`]+`|\[[^\]]+\]\([^)]+\))")
 
 
@@ -384,7 +391,7 @@ def blog(posts: list[dict]) -> str:
         entries = "".join(
             f'<article class="blog-entry"><h3><a href="../{post["path"]}">{esc(post["title"])}</a></h3>'
             f'<p class="post-meta"><time datetime="{post["date"]}">{esc(post["display_date"])}</time> · {esc(post.get("tags", "Notes"))}</p>'
-            f'<p>{esc(post.get("description", ""))}</p></article>'
+            f'{paragraph(post.get("description", ""))}</article>'
             for post in posts if post["year"] == year
         )
         years.append(f'<section class="section"><h2>{year}</h2>{entries}</section>')
@@ -400,13 +407,13 @@ def blog(posts: list[dict]) -> str:
 
 def post_page(post: dict) -> str:
     prefix = "../../../"
+    deck = f'\n          {paragraph(post.get("description", ""), "article-deck")}' if post.get("description") else ""
     body = f"""
     <main id="main" class="article-main">
       <article>
         <header class="article-heading">
           <h1>{esc(post['title'])}</h1>
-          <p class="post-meta">Haolin He · <time datetime="{post['date']}">{esc(post['display_date'])}</time> · {esc(post.get('tags', 'Notes'))}</p>
-          <p class="article-deck">{esc(post.get('description', ''))}</p>
+          <p class="post-meta">Haolin He · <time datetime="{post['date']}">{esc(post['display_date'])}</time> · {esc(post.get('tags', 'Notes'))}</p>{deck}
         </header>
         <div class="prose post-body">{post['body']}</div>
         <p class="article-back"><a href="../../index.html">← Back to Blog</a></p>

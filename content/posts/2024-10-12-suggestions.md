@@ -2,7 +2,6 @@
 layout: post
 title: 17 Suggestions from My Supervisor
 date: 2024-10-12 4:00:00
-description: If you're just starting your PhD journey, these suggestions could be helpful.
 tags: PhD
 bilingual: true
 featured: true
