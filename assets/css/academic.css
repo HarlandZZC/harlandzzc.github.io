@@ -109,7 +109,7 @@ img { display: block; max-width: 100%; height: auto; }
 .social-links { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 10px; }
 .social-link { display: inline-flex; line-height: 0; }
 .social-link img, .social-link svg { width: 28px; height: 28px; object-fit: contain; }
-.social-link svg { fill: #181717; }
+.social-link svg { fill: var(--purple); }
 .section { margin-top: 28px; }
 .biography p { text-align: left; }
 .experience-entry + .experience-entry, .education-entry + .education-entry, .service-entry + .service-entry { margin-top: 16px; }
