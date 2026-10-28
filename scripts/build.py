@@ -308,9 +308,7 @@ def home(posts: list[dict]) -> str:
       </section>
       <section class="section" aria-labelledby="biography-heading">
         <h2 id="biography-heading">Biography</h2>
-        <div class="biography">{intro}
-          <p>Previously, I was a research intern with the Venus team at Ant Group. I received my B.Eng. in Communication Engineering from the University of Electronic Science and Technology of China in 2024.</p>
-        </div>
+        <div class="biography">{intro}</div>
       </section>
       <section class="section" aria-labelledby="education-heading">
         <h2 id="education-heading">Education</h2>

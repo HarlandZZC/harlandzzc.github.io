@@ -40,8 +40,8 @@
   --heading-font: "Source Serif 4", Georgia, "Songti SC", serif;
   font-family: var(--body-font);
   color: var(--text);
-  font-size: 21px;
-  line-height: 1.45;
+  font-size: 20px;
+  line-height: 1.4;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
 }
@@ -69,18 +69,19 @@ a:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; }
 h1, h2, h3, p, figure { margin: 0; }
 h1, h2, h3 { color: var(--purple); line-height: 1.35; }
 h1, h2 { font-family: var(--heading-font); font-weight: 600; letter-spacing: -.018em; }
-h1 { font-size: 36px; text-wrap: balance; }
+h1 { font-size: 34px; text-wrap: balance; }
 h2 {
-  font-size: 27px;
+  font-size: 26px;
   border-bottom: 1px solid var(--rule);
-  padding-bottom: 6px;
-  margin-bottom: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
 }
-h3 { font-size: 21px; font-weight: 600; line-height: 1.35; }
-p + p { margin-top: 10px; }
+h3 { font-size: 20px; font-weight: 600; line-height: 1.35; text-wrap: balance; }
+p { text-wrap: balance; }
+p + p { margin-top: 8px; }
 strong { font-weight: 600; }
 ul, ol { padding-left: 25px; margin: 9px 0 0; }
-li { padding-left: 2px; margin-bottom: 3px; }
+li { padding-left: 2px; margin-bottom: 3px; text-wrap: balance; }
 img { display: block; max-width: 100%; height: auto; }
 [hidden] { display: none !important; }
 .skip-link { position: fixed; top: -80px; left: 20px; z-index: 10; background: white; padding: 9px 16px; border: 2px solid var(--purple); }
@@ -89,7 +90,7 @@ img { display: block; max-width: 100%; height: auto; }
 /* Keep the navigation as simple as the academic reference. */
 .site-header { background: #f5f4f6; }
 .main-nav { display: flex; justify-content: center; align-items: center; gap: 0; }
-.nav-link { display: block; min-width: 140px; padding: 9px 28px; text-align: center; font-size: 21px; color: var(--muted); }
+.nav-link { display: block; min-width: 140px; padding: 8px 28px; text-align: center; font-size: 19px; color: var(--muted); }
 .nav-link[aria-current="page"] { font-weight: 600; color: var(--purple); }
 
 /* The introduction follows the reference: profile, then Biography. */
@@ -98,26 +99,26 @@ img { display: block; max-width: 100%; height: auto; }
   grid-template-columns: minmax(0, 1fr) 230px;
   gap: 60px;
   align-items: stretch;
-  padding: 30px 0 0;
+  padding: 26px 0 0;
 }
-.profile-info h1 { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 19px; }
+.profile-info h1 { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 16px; }
 .profile-info h1 > span { white-space: nowrap; }
 .name-calligraphy { width: auto; height: 30px; flex: 0 0 auto; }
-.profile-role { color: var(--purple); font-size: 22px; font-weight: 600; margin-bottom: 4px; }
-.profile-role + p { margin-top: 0; line-height: 1.45; }
-.profile-email { margin-top: 15px; }
+.profile-role { color: var(--purple); font-size: 21px; font-weight: 600; margin-bottom: 4px; }
+.profile-role + p { margin-top: 0; line-height: 1.4; }
+.profile-email { margin-top: 12px; }
 /* Compensate for the whitespace inside the name and final links' line boxes. */
 .portrait { position: relative; min-height: 0; margin: 9px 0 4px; overflow: hidden; border-radius: 8px; }
 .portrait picture { position: absolute; inset: 0; display: block; }
 .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.social-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 12px; font-size: 20px; }
+.social-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 10px; font-size: 19px; }
 .social-links > span { color: #888; }
-.section { margin-top: 32px; }
+.section { margin-top: 28px; }
 .biography p { text-align: left; }
-.experience-entry + .experience-entry, .education-entry + .education-entry, .service-entry + .service-entry { margin-top: 18px; }
+.experience-entry + .experience-entry, .education-entry + .education-entry, .service-entry + .service-entry { margin-top: 16px; }
 .entry-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; }
 .entry-heading h3 { color: var(--text); }
-.entry-date { font-size: 20px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.entry-date { font-size: 19px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .entry-role { margin-top: 3px; color: #514957; }
 .education-entry ul { margin-top: 7px; }
 .award-list { margin-top: 0; }
@@ -129,45 +130,45 @@ img { display: block; max-width: 100%; height: auto; }
 .skills-list dd { margin: 0; }
 
 /* Plain publication entries: title, authors, venue, links. */
-.page-heading { margin-top: 30px; }
-.page-heading h1 { margin-bottom: 13px; }
-.publication-group { margin-top: 28px; }
-.paper-entry { margin-top: 25px; }
-.paper-entry h3 { font-size: 22px; line-height: 1.35; font-weight: 600; }
+.page-heading { margin-top: 26px; }
+.page-heading h1 { margin-bottom: 12px; }
+.publication-group { margin-top: 24px; }
+.paper-entry { margin-top: 22px; }
+.paper-entry h3 { font-size: 21px; line-height: 1.35; font-weight: 600; }
 .paper-entry p { margin-top: 3px; }
-.paper-authors { font-size: 20px; line-height: 1.45; }
+.paper-authors { font-size: 19px; line-height: 1.4; }
 .paper-authors strong { color: var(--text); }
-.paper-venue { font-size: 20px; }
+.paper-venue { font-size: 19px; }
 .paper-venue > span { color: var(--muted); margin-left: 5px; }
-.resource-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; font-size: 20px; }
+.resource-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; font-size: 19px; }
 
 /* Blog uses the same typography and layout as the other two pages. */
-.blog-entry + .blog-entry { margin-top: 24px; }
-.blog-entry h3 { font-size: 23px; line-height: 1.35; }
+.blog-entry + .blog-entry { margin-top: 20px; }
+.blog-entry h3 { font-size: 22px; line-height: 1.35; }
 .blog-entry p { margin-top: 6px; }
-.post-meta { font-size: 19px; color: var(--muted); font-variant-numeric: tabular-nums; }
-.article-heading { margin-top: 30px; }
+.post-meta { font-size: 18px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.article-heading { margin-top: 26px; }
 .article-heading h1 { margin-bottom: 12px; }
 [lang="zh-Hans"] { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", var(--body-font); }
-.article-deck { margin-top: 18px; }
-.prose { margin-top: 20px; line-height: 1.5; }
-.prose li { margin-bottom: 12px; padding-left: 5px; }
+.article-deck { margin-top: 16px; }
+.prose { margin-top: 18px; line-height: 1.45; }
+.prose li { margin-bottom: 10px; padding-left: 5px; }
 .prose .bilingual-list { padding-left: 32px; }
-.prose .bilingual-list > li { margin-bottom: 16px; padding-left: 8px; }
+.prose .bilingual-list > li { margin-bottom: 14px; padding-left: 8px; }
 .prose .bilingual-list p { margin: 0; }
 .prose .bilingual-list p + p { margin-top: 4px; }
-.prose .bilingual-list [lang="zh-Hans"] { line-height: 1.55; color: var(--muted); }
+.prose .bilingual-list [lang="zh-Hans"] { line-height: 1.5; color: var(--muted); }
 .prose .bilingual-list [lang="en"] { color: var(--text); }
-.prose h2, .prose h3 { margin: 26px 0 12px; }
-.prose p { margin: 10px 0; }
-.prose pre { background: #f5f5f5; padding: 16px; overflow: auto; font-size: 18px; }
+.prose h2, .prose h3 { margin: 24px 0 12px; }
+.prose p { margin: 8px 0; }
+.prose pre { background: #f5f5f5; padding: 14px; overflow: auto; font-size: 17px; }
 .prose code { font-family: Consolas, "Liberation Mono", monospace; font-size: .9em; overflow-wrap: anywhere; }
-.prose blockquote { margin: 20px 0; padding-left: 18px; border-left: 3px solid #bcb0c6; }
-.prose figure { margin: 22px 0; }
-.prose figcaption { color: var(--muted); font-size: 18px; margin-top: 7px; }
-.prose hr { border: 0; border-top: 1px solid var(--rule); margin: 24px 0; }
-.article-back { margin-top: 26px; }
-.site-footer { margin-top: 42px; padding-top: 13px; border-top: 1px solid var(--rule); font-size: 19px; color: var(--muted); }
+.prose blockquote { margin: 18px 0; padding-left: 18px; border-left: 3px solid #bcb0c6; }
+.prose figure { margin: 20px 0; }
+.prose figcaption { color: var(--muted); font-size: 17px; margin-top: 7px; }
+.prose hr { border: 0; border-top: 1px solid var(--rule); margin: 22px 0; }
+.article-back { margin-top: 24px; }
+.site-footer { margin-top: 36px; padding-top: 12px; border-top: 1px solid var(--rule); font-size: 18px; color: var(--muted); }
 .site-footer p > span { margin-inline: 6px; }
 .not-found { padding-block: 30px; }
 .not-found h1 { margin-bottom: 18px; }
@@ -179,27 +180,27 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 @media (max-width: 660px) {
-  :root { font-size: 21px; line-height: 1.45; }
+  :root { font-size: 19px; line-height: 1.4; }
   body { background: white; }
   .page { width: 100%; padding: 12px 22px 22px; margin: 0; min-height: 100vh; }
   .main-nav { justify-content: space-evenly; }
-  .nav-link { min-width: 0; flex: 0 1 auto; font-size: 21px; padding: 8px 12px; }
-  .profile-header { display: flex; flex-direction: column; gap: 20px; padding-top: 24px; }
-  .profile-info h1 { gap: 8px 16px; margin-bottom: 18px; }
+  .nav-link { min-width: 0; flex: 0 1 auto; font-size: 19px; padding: 8px 12px; }
+  .profile-header { display: flex; flex-direction: column; gap: 18px; padding-top: 22px; }
+  .profile-info h1 { gap: 8px 16px; margin-bottom: 16px; }
   .name-calligraphy { height: 28px; }
   .portrait { width: 170px; margin: 0; aspect-ratio: 1000 / 1150; }
-  .profile-role { font-size: 21px; }
+  .profile-role { font-size: 20px; }
   .profile-email { overflow-wrap: anywhere; }
-  .social-links { font-size: 20px; gap: 4px 9px; }
-  h1 { font-size: 34px; }
-  h2 { font-size: 27px; }
+  .social-links { font-size: 19px; gap: 4px 9px; }
+  h1 { font-size: 32px; }
+  h2 { font-size: 25px; }
   .entry-heading { display: block; }
   .entry-date { display: block; margin-top: 4px; }
-  .section { margin-top: 26px; }
+  .section { margin-top: 24px; }
   .skills-list > div { grid-template-columns: 112px minmax(0, 1fr); gap: 12px; }
   .paper-venue > span { margin-left: 0; }
-  .site-footer { font-size: 19px; }
-  .article-heading h1 { font-size: 31px; }
+  .site-footer { font-size: 18px; }
+  .article-heading h1 { font-size: 29px; }
   .prose ul, .prose ol { padding-left: 22px; }
 }
 
