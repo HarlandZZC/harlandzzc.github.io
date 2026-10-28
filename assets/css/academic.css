@@ -170,6 +170,7 @@ img { display: block; max-width: 100%; height: auto; }
 .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 22px 0; }
 .article-back { margin-top: 24px; }
 .site-footer { margin-top: 36px; padding-top: 12px; border-top: 1px solid var(--rule); font-size: 18px; color: var(--muted); }
+.blog-main + .site-footer { margin-top: 16px; }
 .site-footer p > span { margin-inline: 6px; }
 .not-found { padding-block: 30px; }
 .not-found h1 { margin-bottom: 18px; }
