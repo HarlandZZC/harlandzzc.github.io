@@ -33,8 +33,6 @@
 :root {
   --purple: #612968;
   --purple-hover: #4d2154;
-  --gold: #d5a848;
-  --gold-hover: #b88d36;
   --text: #29252c;
   --muted: #625c67;
   --rule: #dfd0e2;
@@ -62,9 +60,8 @@ main { display: block; }
 a { color: var(--purple); text-decoration: none; overflow-wrap: anywhere; }
 a:hover { color: var(--purple-hover); text-decoration: underline; text-underline-offset: 3px; }
 a:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; }
-main p a, .social-links a, .resource-links a, .prose li > a { color: var(--gold); }
-main p a:hover, .social-links a:hover, .resource-links a:hover, .prose li > a:hover { color: var(--gold-hover); }
-main p strong a, .prose li strong a { color: var(--purple); }
+main p a, .social-links a, .resource-links a, .prose li > a { color: var(--text); }
+main p a:hover, .social-links a:hover, .resource-links a:hover, .prose li > a:hover { color: var(--text); }
 h1, h2, h3, p, figure { margin: 0; }
 h1, h2, h3 { color: var(--purple); line-height: 1.35; }
 h1, h2 { font-family: var(--heading-font); font-weight: 600; letter-spacing: -.018em; }
