@@ -1,0 +1,322 @@
+{
+  "name": "Haolin He",
+  "name_zh": "何昊林",
+  "email": "harlandzzc (at) gmail.com",
+  "github": "https://github.com/HarlandZZC",
+  "scholar": "https://scholar.google.com/citations?user=CjLQUFsAAAAJ",
+  "updated": "October 2026",
+  "year": 2026,
+  "tagline": "Learning to hear, see, and interact.",
+  "intro": [
+    "I'm a Ph.D. student at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/), advised by [Prof. Qiuqiang Kong](https://qiuqiangkong.github.io/), and a research intern with the **Qwen team at Alibaba**.",
+    "I work on multimodal understanding and interaction, aiming to build AI assistants that integrate deeply into people's everyday lives."
+  ],
+  "interests": [
+    "Audio–visual interaction",
+    "Multimodal reasoning",
+    "Post-training"
+  ],
+  "experience": [
+    {
+      "organization": "Alibaba Group",
+      "team": "Qwen Team",
+      "url": "https://github.com/QwenLM",
+      "role": "Research Intern",
+      "focus": "Multimodal Interaction and Post-Training",
+      "period": "Feb 2026 — present",
+      "short_period": "2026 — now",
+      "location": "Hangzhou, China"
+    },
+    {
+      "organization": "Ant Group",
+      "team": "Venus Team",
+      "url": "https://github.com/inclusionAI/Realtime-Venus",
+      "role": "Research Intern",
+      "focus": "Multimodal Understanding and Post-Training",
+      "period": "Apr 2025 — Feb 2026",
+      "short_period": "2025 — 2026",
+      "location": "Shanghai, China"
+    }
+  ],
+  "education": [
+    {
+      "institution": "The Chinese University of Hong Kong",
+      "short_name": "CUHK",
+      "url": "https://www.cuhk.edu.hk/",
+      "degree": "Ph.D. in Electronic Engineering",
+      "period": "Aug 2024 — Jul 2028 (expected)",
+      "short_period": "2024 — present",
+      "location": "Hong Kong SAR",
+      "highlights": [
+        "Advised by [Prof. Qiuqiang Kong](https://qiuqiangkong.github.io/).",
+        "Research in multimodal understanding, reasoning, interaction, and post-training."
+      ]
+    },
+    {
+      "institution": "University of Electronic Science and Technology of China",
+      "short_name": "UESTC",
+      "url": "https://en.uestc.edu.cn/",
+      "degree": "B.Eng. in Communication Engineering",
+      "period": "Sep 2020 — Jul 2024",
+      "short_period": "2020 — 2024",
+      "location": "Chengdu, China",
+      "highlights": [
+        "GPA **3.95/4.0**. Outstanding Graduate of Sichuan Province and UESTC.",
+        "National Scholarship (2022–23).",
+        "Honors Bachelor, Honors Courses, and Honors Research."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "id": "omnivchat",
+      "name": "OmniVChat",
+      "title": "OmniVChat: Synthesizing, Benchmarking, and Training for Native Audio-Visual Dialogue",
+      "year": 2026,
+      "venue": "Under review",
+      "category": "first",
+      "role": "First author",
+      "topic": "Audio–visual dialogue",
+      "authors": "**H. He**, Y. Chu, Q. Chen, W. Huang, Y. Feng, M. Zhu, Z. Dai, …, X. Chen, J. Xu, Q. Kong",
+      "description": "From synthetic conversations to better interaction: a data engine, benchmark, and post-training recipe for native audio–visual dialogue.",
+      "highlights": [
+        "**OmniVChat-Studio:** a four-agent data engine that synthesizes single- and multi-turn multimodal dialogues from a text corpus and subcategory configurations, with rendered clips, reference replies, and tiered rubrics.",
+        "**OmniVChat-Bench:** 2,800 synthesized dialogues spanning five ability categories, 17 subcategories, and 22 scenario domains; evaluates basic dialogue abilities in eleven released systems with explicit rubric criteria.",
+        "**OmniVChat-RL:** training Qwen3-Omni-Instruct on 5,600 synthetic dialogues raises rubric scores from **0.465 to 0.652** on OmniVChat-Bench and **0.402 to 0.632** on the human-recorded OmniVChat-Bench-Human. Mean reply length falls from **79 to 36 words**, while Style increases from **0.710 to 0.992**."
+      ],
+      "links": [
+        {"label": "Paper", "url": "https://arxiv.org/abs/2609.21465"},
+        {"label": "Code", "url": "https://github.com/HarlandZZC/OmniVChat"},
+        {"label": "Dataset", "url": "https://huggingface.co/datasets/Harland/OmniVChat"}
+      ],
+      "selected": true
+    },
+    {
+      "id": "odu",
+      "name": "Omni Demand Understanding",
+      "title": "Omni Demand Understanding: A Benchmark for Contextual User-Intent Inference in Multimodal Interaction",
+      "year": 2026,
+      "venue": "arXiv",
+      "category": "first",
+      "role": "Co-first author",
+      "topic": "Context & intent",
+      "authors": "Q. Chen, Y. Chu, **H. He**, Y. Yang, Z. Liu, Y. Wang, Z. Ma, …, Q. Kong, J. Xu, X. Chen",
+      "description": "Understanding what a person needs from what they say, what they show, and the context around them.",
+      "highlights": [
+        "Developed **ODU-Bench**, with 2,078 synthetic and human-recorded scenes for demand detection and contextual intent inference, evaluated across five dimensions.",
+        "Evaluated 14 native multimodal models: Gemini 3.1 Pro recovers **44.7%** of context-dependent key information, while **11 of 14** models falsely trigger on more than half of no-demand scenes."
+      ],
+      "links": [
+        {"label": "Paper", "url": "https://arxiv.org/abs/2609.21392"},
+        {"label": "Dataset", "url": "https://huggingface.co/datasets/qc316/odubench"}
+      ],
+      "selected": true
+    },
+    {
+      "id": "audiomcq",
+      "name": "AudioMCQ",
+      "title": "Measuring Audio's Impact on Correctness: Audio-Contribution-Aware Post-Training of Large Audio Language Models",
+      "year": 2026,
+      "venue": "ICLR 2026",
+      "category": "first",
+      "role": "First author",
+      "topic": "Audio understanding",
+      "authors": "**H. He**, X. Du, R. Sun, Z. Dai, Y. Xiao, M. Yang, J. Zhou, …, M. Plumbley, J. Liu, Q. Kong",
+      "description": "Helping audio models actually listen: measuring audio's contribution and reducing shortcuts in multimodal reasoning.",
+      "highlights": [
+        "Released **AudioMCQ**, containing 571k multiple-choice questions with structured and unstructured chain-of-thought supervision for grounded reasoning across sound, speech, and music.",
+        "Developed **AudioMCQ-StrongAC-GeminiCoT**, a **19,480-sample** subset with Gemini reasoning summaries for temporal analysis and evidence-based option selection, supporting CoT distillation; adopted as the official DCASE 2026 Task 5 training set.",
+        "Proposed **Audio-Contribution Filtering** and Weak-to-Strong / Mixed-to-Strong post-training to reduce text-only shortcuts; reached **78.2%** on MMAU-test-mini, **75.6%** on MMAU, and **67.1%** on MMAR — state of the art at publication."
+      ],
+      "links": [
+        {"label": "Paper", "url": "https://arxiv.org/abs/2509.21060"},
+        {"label": "Dataset", "url": "https://huggingface.co/datasets/inclusionAI/AudioMCQ"},
+        {"label": "CoT data", "url": "https://huggingface.co/datasets/Harland/AudioMCQ-StrongAC-GeminiCoT"}
+      ],
+      "selected": true
+    },
+    {
+      "id": "realtime-venus",
+      "name": "Realtime-Venus",
+      "title": "Realtime-Venus: A full-duplex interaction system with asynchronous delegation",
+      "year": 2026,
+      "venue": "Technical report",
+      "category": "report",
+      "role": "Contributor",
+      "topic": "Full-duplex interaction",
+      "authors": "Venus Team (Ant Group), Tsinghua University",
+      "description": "A full-duplex multimodal system that keeps a conversation flowing while reasoning and using tools in the background.",
+      "highlights": [
+        "Contributed to a multimodal agent with two 9B models, combining full-duplex interaction with asynchronous background reasoning and tool execution."
+      ],
+      "links": [
+        {"label": "Paper", "url": "https://arxiv.org/abs/2609.13814"},
+        {"label": "Code", "url": "https://github.com/inclusionAI/Realtime-Venus"}
+      ],
+      "selected": true
+    },
+    {
+      "id": "qwen-omni",
+      "name": "Qwen3.8-Omni",
+      "title": "Qwen3.8-Omni: Towards Native Omni-Modal Agents",
+      "year": 2026,
+      "venue": "Technical report",
+      "category": "report",
+      "role": "Contributor",
+      "topic": "Omni-modal models",
+      "authors": "Qwen Team",
+      "description": "A contribution to Qwen3.8-Omni and native omni-modal agents.",
+      "highlights": [
+        "Contributed to Qwen3.8-Omni as a member of the Qwen team."
+      ],
+      "links": [
+        {"label": "Paper", "url": "https://arxiv.org/abs/2609.25611"},
+        {"label": "Blog", "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash"}
+      ],
+      "selected": false
+    },
+    {
+      "id": "dcase-2026",
+      "name": "DCASE 2026 Task 5",
+      "title": "Summary of DCASE 2026 Task 5: Audio-Dependent Question Answering",
+      "year": 2026,
+      "venue": "Challenge summary",
+      "category": "first",
+      "role": "First author · Lead organizer",
+      "topic": "Grounded evaluation",
+      "authors": "**H. He**, R. Sun, Z. Dai, X. Du, C. Wu, Z. Liang, Z. Liu, J. Lei, R. Wang, J. Zhou, et al.",
+      "description": "A challenge for question answering that depends on listening, with grounded evaluation and open baselines.",
+      "highlights": [
+        "Designed filtering and evaluation protocols for evidence-dependent question answering; released **ADQA-Bench** and five open-source baselines, and analysed **14 international teams** across two award tracks."
+      ],
+      "links": [
+        {"label": "Paper", "url": "https://arxiv.org/abs/2607.18718"},
+        {"label": "Challenge", "url": "https://dcase.community/challenge2026/task-audio-dependent-question-answering"},
+        {"label": "Dataset", "url": "https://huggingface.co/datasets/Harland/ADQA-Bench"}
+      ],
+      "selected": false
+    },
+    {
+      "id": "finelap",
+      "name": "FineLAP",
+      "title": "FineLAP: Taming Heterogeneous Supervision for Fine-Grained Language-Audio Pretraining",
+      "year": 2026,
+      "venue": "ACL 2026",
+      "category": "collaboration",
+      "role": "Co-author",
+      "topic": "Language–audio pretraining",
+      "authors": "X. Li, X. Xu, Z. Ma, W. Chen, **H. He**, Q. Kong, X. Chen",
+      "description": "Fine-grained language–audio pretraining with heterogeneous supervision.",
+      "highlights": [],
+      "links": [
+        {"label": "Paper", "url": "https://aclanthology.org/2026.acl-long.473/"}
+      ],
+      "selected": false
+    },
+    {
+      "id": "longaudiospan",
+      "name": "LongAudioSpan",
+      "title": "LongAudioSpan: Spanning the Duration and Depth of Audio Comprehension",
+      "year": 2026,
+      "venue": "arXiv",
+      "category": "collaboration",
+      "role": "Co-author",
+      "topic": "Long-form audio",
+      "authors": "W. Huang, Y. Chu, M. Gao, **H. He**, J. Xu",
+      "description": "Exploring the duration and depth of audio comprehension.",
+      "highlights": [],
+      "links": [
+        {"label": "Paper", "url": "https://arxiv.org/abs/2608.26431"}
+      ],
+      "selected": false
+    },
+    {
+      "id": "deepnuparc",
+      "name": "DeepNuParc",
+      "title": "DeepNuParc: A Novel Deep Clustering Framework for Fine-scale Parcellation of Brain Nuclei Using Diffusion MRI Tractography",
+      "year": 2025,
+      "venue": "NeuroImage 2025",
+      "category": "first",
+      "role": "First author",
+      "topic": "Neuroimaging",
+      "authors": "**H. He**, C. Zhu, L. Zhang, Y. Liu, X. Xu, Y. Chen, L. Zekelman, J. Rushmore, …, F. Zhang",
+      "description": "Deep clustering for fine-scale brain parcellation from diffusion MRI tractography.",
+      "highlights": [
+        "Parcellated the amygdala and thalamus at fine scale from diffusion MRI tractography alone, using a k-means-friendly dense-CNN autoencoder over smoothed connectivity features.",
+        "Published in NeuroImage (JCR Q1, CAS Q1 Top in Neuroimaging)."
+      ],
+      "links": [
+        {"label": "Paper", "url": "https://doi.org/10.1016/j.neuroimage.2025.121421"}
+      ],
+      "selected": false
+    },
+    {
+      "id": "deepfake",
+      "name": "Audio Deepfake Detection",
+      "title": "Generalizable Audio Deepfake Detection via Risk-Aware Style Alignment and Structural Empirical Risk Minimization",
+      "year": 2025,
+      "venue": "ACM Multimedia 2025",
+      "category": "collaboration",
+      "role": "Co-author",
+      "topic": "Audio deepfake detection",
+      "authors": "M. Yang, Y. Gu, Q. He, P. Zhang, **H. He**, Z. Wang, H. Zhu, J. Liu, W. Wang",
+      "description": "Generalizable audio deepfake detection through risk-aware style alignment.",
+      "highlights": [],
+      "links": [
+        {"label": "Paper", "url": "https://doi.org/10.1145/3746027.3755593"}
+      ],
+      "selected": false
+    },
+    {
+      "id": "amygdala",
+      "name": "Amygdala Parcellation",
+      "title": "A Novel Deep Clustering Framework for Fine-scale Parcellation of Amygdala Using dMRI Tractography",
+      "year": 2024,
+      "venue": "IEEE ISBI 2024",
+      "category": "first",
+      "role": "First author",
+      "topic": "Neuroimaging",
+      "authors": "**H. He**, C. Zhu, L. Zhang, Y. Liu, X. Xu, Y. Chen, L. Zekelman, J. Rushmore, …, F. Zhang",
+      "description": "Fine-scale parcellation of the amygdala using diffusion MRI and deep clustering.",
+      "highlights": [
+        "Parcellated the amygdala into nine subregions from DWI alone, with no T1-assisted and no manual segmentation.",
+        "Selected as one of **50 Student Travel Grant winners worldwide**."
+      ],
+      "links": [
+        {"label": "Paper", "url": "https://ieeexplore.ieee.org/abstract/document/10635363"}
+      ],
+      "selected": false
+    }
+  ],
+  "service": [
+    {
+      "title": "DCASE 2026 · Audio-Dependent Question Answering",
+      "role": "Lead Organizer",
+      "period": "2026",
+      "url": "https://dcase.community/challenge2026/task-audio-dependent-question-answering"
+    },
+    {
+      "title": "DCASE 2025 · Audio Question Answering",
+      "role": "1st Place Worldwide",
+      "period": "Apr — Jul 2025",
+      "url": "https://dcase.community/challenge2025/task-audio-question-answering-results"
+    },
+    {
+      "title": "Mathematical / Interdisciplinary Contest in Modeling",
+      "role": "Finalist (F Award)",
+      "period": "Feb 2023",
+      "url": "https://comap.org/contests/mcm-icm"
+    }
+  ],
+  "awards": [
+    {"year": "2025", "title": "1st Place Worldwide", "detail": "DCASE Audio Question Answering Challenge"},
+    {"year": "2024", "title": "Student Travel Grant", "detail": "IEEE ISBI · one of 50 recipients worldwide"},
+    {"year": "2024", "title": "Outstanding Graduate", "detail": "Sichuan Province & UESTC"},
+    {"year": "2023", "title": "Finalist · F Award", "detail": "MCM/ICM"},
+    {"year": "2022–23", "title": "National Scholarship", "detail": "Ministry of Education of China"}
+  ],
+  "skills": [
+    {"label": "Programming", "value": "Python (PyTorch), MATLAB, C, Verilog, LaTeX"},
+    {"label": "Languages", "value": "Chinese (native), English (IELTS 7.5)"}
+  ]
+}

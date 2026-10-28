@@ -1,0 +1,12 @@
+/_site/
+/.haolin-site-build
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+*.log
+.venv/
+venv/
+node_modules/
+*.zip
+*.tar.gz
