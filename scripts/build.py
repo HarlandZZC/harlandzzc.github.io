@@ -53,6 +53,10 @@ def paragraph(text: str, css: str = "") -> str:
     return f"<p{class_attr}>{esc(text)}</p>"
 
 
+def metadata_suffix(value: str | None) -> str:
+    return f" · {esc(value)}" if value else ""
+
+
 INLINE = re.compile(r"(\*\*.+?\*\*|`[^`]+`|\[[^\]]+\]\([^)]+\))")
 
 
@@ -390,7 +394,7 @@ def blog(posts: list[dict]) -> str:
     for year in sorted({post["year"] for post in posts}, reverse=True):
         entries = "".join(
             f'<article class="blog-entry"><h3><a href="../{post["path"]}">{esc(post["title"])}</a></h3>'
-            f'<p class="post-meta"><time datetime="{post["date"]}">{esc(post["display_date"])}</time> · {esc(post.get("tags", "Notes"))}</p>'
+            f'<p class="post-meta"><time datetime="{post["date"]}">{esc(post["display_date"])}</time>{metadata_suffix(post.get("tags"))}</p>'
             f'{paragraph(post.get("description", ""))}</article>'
             for post in posts if post["year"] == year
         )
@@ -413,7 +417,7 @@ def post_page(post: dict) -> str:
       <article>
         <header class="article-heading">
           <h1>{esc(post['title'])}</h1>
-          <p class="post-meta">Haolin He · <time datetime="{post['date']}">{esc(post['display_date'])}</time> · {esc(post.get('tags', 'Notes'))}</p>{deck}
+          <p class="post-meta">Haolin He · <time datetime="{post['date']}">{esc(post['display_date'])}</time>{metadata_suffix(post.get('tags'))}</p>{deck}
         </header>
         <div class="prose post-body">{post['body']}</div>
         <p class="article-back"><a href="../../index.html">← Back to Blog</a></p>
