@@ -62,7 +62,7 @@ In a remote development environment, forward the port to your local machine or u
 | Automated build and deployment | `.github/workflows/pages.yml` |
 | Deployment output (not committed) | `_site/` |
 
-Colors and fonts can be adjusted in the CSS `:root`. The primary color is `--purple: #612968`; body text is 20px on desktop and 19px on small screens, with a line height of 1.4. English blog text uses a line height of 1.45, and Chinese text uses 1.5. Headings are distinguished by typography, size, and horizontal rules. All pages work without JavaScript.
+Colors and fonts can be adjusted in the CSS `:root`. The primary colors are `--purple: #612968` and `--gold: #d5a848`; body text is 20px on desktop and 19px on small screens, with a line height of 1.4. English blog text uses a line height of 1.45, and Chinese text uses 1.5. Headings are distinguished by typography, size, and horizontal rules. All pages work without JavaScript.
 
 The portrait is cropped at the top and bottom to retain the face and shoulders while removing the shirt logo. Both JPG and WebP versions are 1000 × 1150 pixels. On desktop, the image is 230px wide, aligned with the visible edges of the name and the final profile-link line, with 8px rounded corners. The Chinese signature is a transparent PNG rendered with Ma Shan Zheng calligraphy; its font license is in `assets/fonts/ma-shan-zheng-LICENSE.txt`. The site does not offer a separate CV or PDF download.
 
