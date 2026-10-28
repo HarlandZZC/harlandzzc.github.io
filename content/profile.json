@@ -8,14 +8,9 @@
   "year": 2026,
   "tagline": "Learning to hear, see, and interact.",
   "intro": [
-    "I'm a Ph.D. student at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/), advised by [Prof. Qiuqiang Kong](https://qiuqiangkong.github.io/), and a research intern with the **Qwen team at Alibaba**.",
+    "I'm a Ph.D. student at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/), advised by [Prof. Qiuqiang Kong](https://qiuqiangkong.github.io/), and a research intern with the Qwen team at Alibaba.",
     "Previously, I was a research intern with the Venus team at Ant Group. I received my B.Eng. in Communication Engineering from the University of Electronic Science and Technology of China in 2024.",
     "I work on multimodal understanding and interaction, aiming to build AI assistants that understand people's needs, interact naturally, and integrate deeply into their everyday lives."
-  ],
-  "interests": [
-    "Audio–visual interaction",
-    "Multimodal reasoning",
-    "Post-training"
   ],
   "experience": [
     {
@@ -315,9 +310,5 @@
     {"year": "2024", "title": "Outstanding Graduate", "detail": "Sichuan Province & UESTC"},
     {"year": "2023", "title": "Finalist · F Award", "detail": "MCM/ICM"},
     {"year": "2022–23", "title": "National Scholarship", "detail": "Ministry of Education of China"}
-  ],
-  "skills": [
-    {"label": "Programming", "value": "Python (PyTorch), MATLAB, C, Verilog, LaTeX"},
-    {"label": "Languages", "value": "Chinese (native), English (IELTS 7.5)"}
   ]
 }

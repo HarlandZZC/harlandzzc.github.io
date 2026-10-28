@@ -60,6 +60,14 @@ def bullets(items: list[str], css: str = "") -> str:
     return f'<ul class="{css}">' + "".join(f"<li>{inline(item)}</li>" for item in items) + "</ul>"
 
 
+def keep_last_line(html: str, words: int = 4) -> str:
+    """Firefox lacks text-wrap: pretty, so tie the closing words into one unbreakable run."""
+    before, tag, tail = html.rpartition(">")
+    for space in list(re.finditer(r" ", tail))[-(words - 1):][::-1]:
+        tail = tail[:space.start()] + "\u00a0" + tail[space.end():]
+    return before + tag + tail
+
+
 def markdown(text: str) -> str:
     """Headings, paragraphs, lists, quotes, images, and fenced code blocks."""
     output: list[str] = []
@@ -249,7 +257,7 @@ def page(title: str, body: str, active: str, prefix: str = "", description: str 
 
 def resource_links(pub: dict) -> str:
     return '<div class="resource-links">' + "".join(
-        f'[{external(link["url"], esc(link["label"]))}]' for link in pub["links"]
+        f'<span>[{external(link["url"], esc(link["label"]))}]</span>' for link in pub["links"]
     ) + "</div>"
 
 
@@ -269,13 +277,10 @@ def home(posts: list[dict]) -> str:
         f'{bullets(item["highlights"])}</article>'
         for item in DATA["education"]
     )
-    intro = "".join(f"<p>{inline(text)}</p>" for text in DATA["intro"])
+    intro = "".join(f"<p>{keep_last_line(inline(text))}</p>" for text in DATA["intro"])
     awards = "".join(
         f'<li><strong>{esc(item["title"])}</strong>, {esc(item["detail"])} ({esc(item["year"])}).</li>'
         for item in DATA["awards"]
-    )
-    skills = "".join(
-        f'<div><dt>{esc(item["label"])}</dt><dd>{esc(item["value"])}</dd></div>' for item in DATA["skills"]
     )
     service = "".join(
         f'<article class="service-entry"><div class="entry-heading">'
@@ -325,10 +330,6 @@ def home(posts: list[dict]) -> str:
       <section class="section" aria-labelledby="honors-heading">
         <h2 id="honors-heading">Honors and Awards</h2>
         <ul class="award-list">{awards}</ul>
-      </section>
-      <section class="section" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills</h2>
-        <dl class="skills-list">{skills}</dl>
       </section>
     </main>"""
     return page("", body, "about", contact=True, page_class="home-page")

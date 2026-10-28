@@ -60,12 +60,6 @@ main { display: block; }
 a { color: var(--purple); text-decoration: none; overflow-wrap: anywhere; }
 a:hover { color: var(--purple-hover); text-decoration: underline; text-underline-offset: 3px; }
 a:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; }
-.biography a, .section p a, .section li a, .page-heading p a, .prose a {
-  text-decoration: underline;
-  text-decoration-color: #bda9ca;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
 h1, h2, h3, p, figure { margin: 0; }
 h1, h2, h3 { color: var(--purple); line-height: 1.35; }
 h1, h2 { font-family: var(--heading-font); font-weight: 600; letter-spacing: -.018em; }
@@ -76,12 +70,11 @@ h2 {
   padding-bottom: 5px;
   margin-bottom: 12px;
 }
-h3 { font-size: 20px; font-weight: 600; line-height: 1.35; text-wrap: balance; }
-p { text-wrap: balance; }
+h3 { font-size: 20px; font-weight: 600; line-height: 1.35; }
 p + p { margin-top: 8px; }
 strong { font-weight: 600; }
 ul, ol { padding-left: 25px; margin: 9px 0 0; }
-li { padding-left: 2px; margin-bottom: 3px; text-wrap: balance; }
+li { padding-left: 2px; margin-bottom: 3px; }
 img { display: block; max-width: 100%; height: auto; }
 [hidden] { display: none !important; }
 .skip-link { position: fixed; top: -80px; left: 20px; z-index: 10; background: white; padding: 9px 16px; border: 2px solid var(--purple); }
@@ -123,11 +116,6 @@ img { display: block; max-width: 100%; height: auto; }
 .education-entry ul { margin-top: 7px; }
 .award-list { margin-top: 0; }
 .award-list li { margin-bottom: 6px; }
-.skills-list { margin: 0; }
-.skills-list > div { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 15px; }
-.skills-list > div + div { margin-top: 6px; }
-.skills-list dt { font-weight: 600; }
-.skills-list dd { margin: 0; }
 
 /* Plain publication entries: title, authors, venue, links. */
 .page-heading { margin-top: 26px; }
@@ -197,7 +185,6 @@ img { display: block; max-width: 100%; height: auto; }
   .entry-heading { display: block; }
   .entry-date { display: block; margin-top: 4px; }
   .section { margin-top: 24px; }
-  .skills-list > div { grid-template-columns: 112px minmax(0, 1fr); gap: 12px; }
   .paper-venue > span { margin-left: 0; }
   .site-footer { font-size: 18px; }
   .article-heading h1 { font-size: 29px; }
@@ -209,8 +196,6 @@ img { display: block; max-width: 100%; height: auto; }
   .profile-header { display: flex; flex-direction: column; gap: 18px; }
   .profile-info { width: 100%; }
   .portrait { width: 155px; }
-  .skills-list > div { display: block; }
-  .skills-list dd { margin-top: 2px; }
   .social-links { gap: 4px 9px; }
 }
 
