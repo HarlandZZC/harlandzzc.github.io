@@ -190,7 +190,7 @@ img { display: block; max-width: 100%; height: auto; }
   .profile-header { display: flex; flex-direction: column; gap: 18px; padding-top: 22px; }
   .profile-info h1 { gap: 8px 16px; margin-bottom: 16px; }
   .name-calligraphy { height: 28px; }
-  .portrait { width: 170px; margin: 0; aspect-ratio: 1000 / 1150; }
+  .portrait { width: 170px; margin: 0; aspect-ratio: 500 / 575; }
   .profile-role { font-size: 20px; }
   .profile-email { overflow-wrap: anywhere; }
   .social-links { font-size: 19px; gap: 4px 9px; }

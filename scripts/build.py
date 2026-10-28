@@ -316,7 +316,7 @@ def home(posts: list[dict]) -> str:
     <main id="main">
       <section class="profile-header" aria-labelledby="profile-name">
         <div class="profile-info">
-          <h1 id="profile-name"><span>{esc(DATA["name"])}</span><img class="name-calligraphy" src="assets/images/haolin-he-chinese.png" alt="{esc(DATA["name_zh"])}" lang="zh-Hans" width="657" height="206"></h1>
+          <h1 id="profile-name"><span>{esc(DATA["name"])}</span><img class="name-calligraphy" src="assets/images/haolin-he-chinese.png" alt="{esc(DATA["name_zh"])}" lang="zh-Hans" width="400" height="125"></h1>
           <p class="profile-role">Ph.D. Student</p>
           <p>Department of Electronic Engineering<br>
             The Chinese University of Hong Kong<br>
@@ -330,7 +330,7 @@ def home(posts: list[dict]) -> str:
         <figure class="portrait">
           <picture>
             <source srcset="assets/images/haolin-he.webp" type="image/webp">
-            <img src="assets/images/haolin-he.jpg" alt="Portrait of Haolin He" width="1000" height="1150" fetchpriority="high">
+            <img src="assets/images/haolin-he.jpg" alt="Portrait of Haolin He" width="500" height="575" fetchpriority="high">
           </picture>
         </figure>
       </section>
