@@ -31,11 +31,11 @@
 }
 
 :root {
-  --purple: #7954a0;
-  --purple-hover: #65407f;
+  --purple: #6b1a69;
+  --purple-hover: #5e0c58;
   --text: #29252c;
   --muted: #625c67;
-  --rule: #ded3e4;
+  --rule: #e5c6dc;
   --body-font: "Source Sans 3", "Segoe UI", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   --heading-font: "Source Serif 4", Georgia, "Songti SC", serif;
   font-family: var(--body-font);
@@ -48,7 +48,7 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; background: #eeeeef; }
-::selection { background: #eee4f3; }
+::selection { background: #f4e1ef; }
 .page {
   width: min(1120px, calc(100% - 48px));
   min-height: calc(100vh - 48px);
