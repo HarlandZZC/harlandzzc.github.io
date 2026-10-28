@@ -36,7 +36,7 @@
   --text: #29252c;
   --muted: #625c67;
   --rule: #dfd0e2;
-  --body-font: "Source Sans 3", "Segoe UI", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --body-font: "Source Serif 4", Georgia, "Songti SC", serif;
   --heading-font: "Source Serif 4", Georgia, "Songti SC", serif;
   font-family: var(--body-font);
   color: var(--text);
