@@ -15,23 +15,7 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / "content/profile.json").read_text(encoding="utf-8"))
 BUILD_MARKER = ".haolin-site-build"
-GOOGLE_SCHOLAR_ICON = (
-    '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
-    '<path d="M21.35 12.27c0-.79-.07-1.55-.2-2.27H12v4.3h5.23a4.46 4.46 0 0 1-1.94 2.93v2.77h3.15c1.84-1.69 2.91-4.18 2.91-7.13Z"/>'
-    '<path d="M12 21.5c2.63 0 4.84-.87 6.45-2.36l-3.15-2.77c-.87.58-1.99.92-3.3.92-2.54 0-4.7-1.72-5.47-4.03H3.27v2.84A9.75 9.75 0 0 0 12 21.5Z"/>'
-    '<path d="M6.53 13.26A5.86 5.86 0 0 1 6.22 12c0-.44.08-.87.22-1.26V7.9H3.27A9.5 9.5 0 0 0 2.25 12c0 1.48.35 2.88 1.02 4.1l3.26-2.84Z"/>'
-    '<path d="M12 6.71c1.55 0 2.94.53 4.04 1.57l3.03-3.03C17.24 3.53 14.84 2.5 12 2.5a9.75 9.75 0 0 0-8.73 5.4l3.26 2.84C7.3 8.43 9.46 6.71 12 6.71Z"/>'
-    "</svg>"
-)
-HUGGING_FACE_ICON = (
-    '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
-    '<circle cx="12" cy="11" r="7"/>'
-    '<circle cx="9.5" cy="9" r="1" fill="#fff"/>'
-    '<circle cx="14.5" cy="9" r="1" fill="#fff"/>'
-    '<path d="M8.5 12.5c.9 1.3 2.1 2 3.5 2s2.6-.7 3.5-2" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>'
-    '<path d="M5 17.5c1.2-1.4 2.4-2.1 3.8-2.1M19 17.5c-1.2-1.4-2.4-2.1-3.8-2.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>'
-    "</svg>"
-)
+GOOGLE_SCHOLAR_ICON = '<img src="assets/images/google-scholar.png" alt="">'
 GITHUB_ICON = (
     '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
     '<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>'
@@ -330,7 +314,6 @@ def home(posts: list[dict]) -> str:
           <div class="social-links" aria-label="Contact and profiles">
             {social_link(DATA["scholar"], "Google Scholar", GOOGLE_SCHOLAR_ICON)}
             {social_link(DATA["github"], "GitHub", GITHUB_ICON)}
-            {social_link("https://huggingface.co/Harland", "Hugging Face", HUGGING_FACE_ICON)}
           </div>
         </div>
         <figure class="portrait">

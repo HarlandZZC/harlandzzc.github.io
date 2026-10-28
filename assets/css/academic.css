@@ -107,9 +107,9 @@ img { display: block; max-width: 100%; height: auto; }
 .portrait picture { position: absolute; inset: 0; display: block; }
 .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .social-links { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 10px; }
-.social-links .social-link { display: inline-flex; color: var(--purple); line-height: 0; }
-.social-links .social-link:hover { color: var(--purple-hover); }
-.social-link svg { width: 28px; height: 28px; fill: currentColor; }
+.social-link { display: inline-flex; line-height: 0; }
+.social-link img, .social-link svg { width: 28px; height: 28px; object-fit: contain; }
+.social-link svg { fill: #181717; }
 .section { margin-top: 28px; }
 .biography p { text-align: left; }
 .experience-entry + .experience-entry, .education-entry + .education-entry, .service-entry + .service-entry { margin-top: 16px; }
