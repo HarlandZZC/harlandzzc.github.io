@@ -60,8 +60,8 @@ main { display: block; }
 a { color: var(--purple); text-decoration: none; overflow-wrap: anywhere; }
 a:hover { color: var(--purple-hover); text-decoration: underline; text-underline-offset: 3px; }
 a:focus-visible { outline: 2px solid var(--purple); outline-offset: 4px; }
-main p a, .social-links a, .resource-links a, .prose li > a { color: var(--text); }
-main p a:hover, .social-links a:hover, .resource-links a:hover, .prose li > a:hover { color: var(--text); }
+main p a, main li a, .social-links a, .resource-links a { color: var(--text); }
+main p a:hover, main li a:hover, .social-links a:hover, .resource-links a:hover { color: var(--purple); }
 h1, h2, h3, p, figure { margin: 0; }
 h1, h2, h3 { color: var(--purple); line-height: 1.35; }
 h1, h2 { font-family: var(--heading-font); font-weight: 600; letter-spacing: -.018em; }
@@ -85,8 +85,8 @@ img { display: block; max-width: 100%; height: auto; }
 /* Keep the navigation as simple as the academic reference. */
 .site-header { background: #f5f4f6; }
 .main-nav { display: flex; justify-content: center; align-items: center; gap: 0; }
-.nav-link { display: block; min-width: 140px; padding: 8px 28px; text-align: center; font-size: 19px; color: var(--muted); }
-.nav-link[aria-current="page"] { font-weight: 600; color: var(--purple); }
+.nav-link { display: block; min-width: 140px; padding: 8px 28px; text-align: center; font-family: var(--heading-font); font-size: 19px; font-weight: 600; color: var(--muted); }
+.nav-link[aria-current="page"] { color: var(--purple); }
 
 /* The introduction follows the reference: profile, then Biography. */
 .profile-header {
