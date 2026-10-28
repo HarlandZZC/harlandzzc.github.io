@@ -31,11 +31,11 @@
 }
 
 :root {
-  --purple: #6b1a69;
-  --purple-hover: #5e0c58;
+  --purple: #612968;
+  --purple-hover: #4d2154;
   --text: #29252c;
   --muted: #625c67;
-  --rule: #e5c6dc;
+  --rule: #dfd0e2;
   --body-font: "Source Sans 3", "Segoe UI", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
   --heading-font: "Source Serif 4", Georgia, "Songti SC", serif;
   font-family: var(--body-font);
@@ -48,7 +48,7 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; background: #eeeeef; }
-::selection { background: #f4e1ef; }
+::selection { background: #f0e6f2; }
 .page {
   width: min(1120px, calc(100% - 48px));
   min-height: calc(100vh - 48px);
@@ -151,7 +151,7 @@ img { display: block; max-width: 100%; height: auto; }
 .prose p { margin: 8px 0; }
 .prose pre { background: #f5f5f5; padding: 14px; overflow: auto; font-size: 17px; }
 .prose code { font-family: Consolas, "Liberation Mono", monospace; font-size: .9em; overflow-wrap: anywhere; }
-.prose blockquote { margin: 18px 0; padding-left: 18px; border-left: 3px solid #cdb9dc; }
+.prose blockquote { margin: 18px 0; padding-left: 18px; border-left: 3px solid #c6a8cc; }
 .prose figure { margin: 20px 0; }
 .prose figcaption { color: var(--muted); font-size: 17px; margin-top: 7px; }
 .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 22px 0; }
