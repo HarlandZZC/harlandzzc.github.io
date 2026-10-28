@@ -15,6 +15,16 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / "content/profile.json").read_text(encoding="utf-8"))
 BUILD_MARKER = ".haolin-site-build"
+GOOGLE_SCHOLAR_ICON = (
+    '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+    '<path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-6 9.27V17l6 3 6-3v-4.73l-6 3.27-6-3.27Z"/>'
+    "</svg>"
+)
+GITHUB_ICON = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">'
+    '<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>'
+    "</svg>"
+)
 
 
 def esc(value: object) -> str:
@@ -33,6 +43,11 @@ def external(url: str, label: str, css: str = "") -> str:
         f'<a class="{esc(css)}" href="{safe_url(url)}"{attrs}>'
         f"{label}</a>"
     )
+
+
+def social_link(url: str, label: str, icon: str) -> str:
+    attrs = ' target="_blank" rel="noopener noreferrer"' if url.startswith(("http:", "https:")) else ""
+    return f'<a class="social-link" href="{safe_url(url)}" aria-label="{esc(label)}"{attrs}>{icon}</a>'
 
 
 INLINE = re.compile(r"(\*\*.+?\*\*|`[^`]+`|\[[^\]]+\]\([^)]+\))")
@@ -223,7 +238,8 @@ def footer(prefix: str, contact: bool = False) -> str:
 
 
 def page(title: str, body: str, active: str, prefix: str = "", description: str = "", contact: bool = False, page_class: str = "") -> str:
-    full_title = f"{title} — Haolin He" if title else "Haolin He — Multimodal Learning & Interaction"
+    site_title = "Haolin He's Personal Website"
+    full_title = f"{title} | {site_title}" if title else site_title
     description = description or "Haolin He is a Ph.D. student at CUHK and a research intern at Alibaba's Qwen team, working on multimodal understanding, interaction, and post-training."
     return f"""<!doctype html>
 <html lang="en">
@@ -300,8 +316,8 @@ def home(posts: list[dict]) -> str:
             Hong Kong SAR</p>
           <p class="profile-email">Email: {esc(DATA["email"])}</p>
           <div class="social-links" aria-label="Contact and profiles">
-            {external(DATA["scholar"], "Google Scholar")}<span aria-hidden="true">/</span>
-            {external(DATA["github"], "GitHub")}
+            {social_link(DATA["scholar"], "Google Scholar", GOOGLE_SCHOLAR_ICON)}
+            {social_link(DATA["github"], "GitHub", GITHUB_ICON)}
           </div>
         </div>
         <figure class="portrait">
