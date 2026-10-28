@@ -17,7 +17,19 @@ DATA = json.loads((ROOT / "content/profile.json").read_text(encoding="utf-8"))
 BUILD_MARKER = ".haolin-site-build"
 GOOGLE_SCHOLAR_ICON = (
     '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
-    '<path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm-6 9.27V17l6 3 6-3v-4.73l-6 3.27-6-3.27Z"/>'
+    '<path d="M21.35 12.27c0-.79-.07-1.55-.2-2.27H12v4.3h5.23a4.46 4.46 0 0 1-1.94 2.93v2.77h3.15c1.84-1.69 2.91-4.18 2.91-7.13Z"/>'
+    '<path d="M12 21.5c2.63 0 4.84-.87 6.45-2.36l-3.15-2.77c-.87.58-1.99.92-3.3.92-2.54 0-4.7-1.72-5.47-4.03H3.27v2.84A9.75 9.75 0 0 0 12 21.5Z"/>'
+    '<path d="M6.53 13.26A5.86 5.86 0 0 1 6.22 12c0-.44.08-.87.22-1.26V7.9H3.27A9.5 9.5 0 0 0 2.25 12c0 1.48.35 2.88 1.02 4.1l3.26-2.84Z"/>'
+    '<path d="M12 6.71c1.55 0 2.94.53 4.04 1.57l3.03-3.03C17.24 3.53 14.84 2.5 12 2.5a9.75 9.75 0 0 0-8.73 5.4l3.26 2.84C7.3 8.43 9.46 6.71 12 6.71Z"/>'
+    "</svg>"
+)
+HUGGING_FACE_ICON = (
+    '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
+    '<circle cx="12" cy="11" r="7"/>'
+    '<circle cx="9.5" cy="9" r="1" fill="#fff"/>'
+    '<circle cx="14.5" cy="9" r="1" fill="#fff"/>'
+    '<path d="M8.5 12.5c.9 1.3 2.1 2 3.5 2s2.6-.7 3.5-2" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/>'
+    '<path d="M5 17.5c1.2-1.4 2.4-2.1 3.8-2.1M19 17.5c-1.2-1.4-2.4-2.1-3.8-2.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>'
     "</svg>"
 )
 GITHUB_ICON = (
@@ -318,6 +330,7 @@ def home(posts: list[dict]) -> str:
           <div class="social-links" aria-label="Contact and profiles">
             {social_link(DATA["scholar"], "Google Scholar", GOOGLE_SCHOLAR_ICON)}
             {social_link(DATA["github"], "GitHub", GITHUB_ICON)}
+            {social_link("https://huggingface.co/Harland", "Hugging Face", HUGGING_FACE_ICON)}
           </div>
         </div>
         <figure class="portrait">
